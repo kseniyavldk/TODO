@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow: hidden;
+    background: #3c87ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    background: #fff;
+    max-width: 405px;
+    margin: 135px auto;
+    border-radius: 7px;
+    padding: 28px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.text-icon{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.todo-input{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 53px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+   
+}
+input.todo-input::placeholder{
+    color: #bfbfbf;
+}
+
+div h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters span{
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.filters span.active{
+    color: #3c87ff;
+}
+
+.todo-button{
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 7px 13px;
+    background: #3c87ff;
+}
+
+/* .todo-block{
+    width: 200px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    
+} */
+/* .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 45%;
+    min-height: 600px;
+    background: white;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  } */
+  
+
+.todo-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    border-bottom: 1px solid #ccc;
 }
