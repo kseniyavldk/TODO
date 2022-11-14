@@ -53,26 +53,4 @@ const TodoList = ({ todos, setTodos, setEditTodo }) => {
   );
 };
 
-/* const TodoList = ({ todos, removeTodo, completeTodo, updateTodo, editTodo, editTodoId }) => {
-  const renderTodos = () => {
-    if (todos.length > 0) {
-      return todos.map((todo) => {
-        return (
-          <Todo
-            key={todo.id}
-            todo={todo}
-            removeTodo={removeTodo}
-            completeTodo={completeTodo}
-            updateTodo={updateTodo}
-            editTodo={editTodo}
-            editTodoId={editTodoId}
-          />
-        );
-      });
-    }
-    return <p className="errMessage">There are no Todos!</p>;
-  };
-  return <div className="todoList-container">{renderTodos()}</div>;
-}; */
-
 export default TodoList;
